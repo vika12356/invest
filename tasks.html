@@ -5,30 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>dog</title>
+    <style>
+      :root {
+        --main-color: #ffffff;
+        --h-color: rgb(226, 132, 206);
+        --h-background: hsl(261, 51%, 51%);
+      }
+      body {
+        background: var(--main-color);
+      }
+      .section-header {
+        background: var(--h-background);
+        color: var(--h-color);
+        font-weight: 800;
+        font-size: 1.15rem;
+        padding: 1rem 1.5rem;
+        margin-top: 0;
+        border-radius: 1rem 0;
+      }
+      .title-header {
+        color: var(--h-background);
+        background: var(--h-color);
+        padding: 1.5rem;
+        margin: 2.5rem 0;
+        text-align: center;
+        border: 1px solid #e9ecef;
+        border-radius: 1.25rem;
+      }
+      .bold {
+        font-weight: 900;
+      }
+      .italic {
+        font-style: italic;
+      }
+      .strike {
+        text-decoration: line-through;
+      }
+      .section-card {
+        border: 1px solid #e9ecef;
+        border-radius: 1rem 0 1rem 0;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+        margin-bottom: 2rem;
+      }
+      .section-card:hover {
+        box-shadow: 0 12px 35px rgba(111, 66, 193, 0.15);
+        transform: translateY(-4px);
+      }
+    </style>
   </head>
   <body>
     <script>
       console.log("Hello world!");
     </script>
-    <style>
-      body {
-        color: #c0d345;
-        background: #ae0d5d;
-      }
-    </style>
-    <h1>Моя первая страница</h1>
-    <section>
-      <h2>Мячик</h2>
-      <div id="ball"></div>
-      <b> Наша Таня громко плачет:</b><br />
-      <i>Уронила в речку мячик.</i><br />
-      -Тише, Танечка, не плачь:<br />
-      <strike> Не утонет в речке мяч.</strike><br />
-      <b> Автор: А. Л.Барто </b><br />
-      <img src="img/1.jpg" alt="Мячик" />
+    <section class="title-header">
+      <h1>Моя первая страница</h1>
     </section>
     <section>
-      <h2>Расписание звонков</h2>
+      <h2 class="section-header">Мячик</h2>
+      <div id="ball"></div>
+      <span class="bold">Наша Таня громко плачет:</span><br />
+      <span class="italic">Уронила в речку мячик.</span><br />
+      <span>-Тише, Танечка, не плачь:</span><br />
+      <span class="strike">Не утонет в речке мяч.</span><br />
+      <span class="bold italic">Автор: А. Л.Барто. </span><br />
+      <img src="img/1.jpg" alt="Мячик" />
+    </section>
+    <section class="section-card">
+      <h2 class="section-header">Расписание звонков</h2>
+
       <div id="Bell schedule"></div>
 
       <ol>
@@ -49,8 +93,9 @@
       </ol>
       <img src="img/22.jpg" alt="Учимся до 21(" />
     </section>
-    <section>
-      <h2>Расписание пар</h2>
+    <section class="section-card">
+      <h2 class="section-header">Расписание пар</h2>
+
       <div id="Class schedule"></div>
       <table>
         <thead>
@@ -77,12 +122,14 @@
         </tbody>
       </table>
     </section>
-    <section>
-      <h2>Весёлые картинки</h2>
+    <section class="section-card">
+      <h2 class="section-header">Веселые картинки</h2>
+
       <div id="Fun Pictures"></div>
     </section>
-    <section>
-      <h2>Дневник</h2>
+    <section class="section-card">
+      <h2 class="section-header">Дневник</h2>
+
       <div id="Diary"></div>
       <div>
         <label for="fio">Фамилия,имя,отчество</label>
@@ -125,12 +172,13 @@
         <input type="telephone" id="telephone" value="123456789" />
       </div>
     </section>
-    <section>
-      <h2>Бухгалтерия</h2>
+    <section class="section-card">
+      <h2 class="section-header">Бухгалтерия</h2>
+
       <div id="Accounting Department"></div>
     </section>
-    <section>
-      <h2>Производные</h2>
+    <section class="section-card">
+      <h2 class="section-header">Производные</h2>
       <div id="Derivatives"></div>
     </section>
   </body>
