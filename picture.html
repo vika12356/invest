@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --brown: #664a32;
+        --blue: #a8c2cf;
+        --grey: #dfe1e6;
+        --border-color: #525252;
+        --shadow: #8b8076;
+        --bd: #feeddc;
+        --card-border: #b0b1ad;
+        --gap-size: 20px;
+      }
+      body {
+        background-color: var(--bg);
+      }
+      #area {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      #area .card {
+        display: block;
+        position: relative;
+        background-color: white;
+        width: 335px;
+        height: 496px;
+        border: 2px solid var(--card-border);
+        box-shadow: -2px 2px 2px 2px var(--shadow);
+        margin: var(--gap-size);
+      }
+      #area .card div {
+        position: absolute;
+      }
+      .grey {
+        background: var(--grey);
+      }
+      .brown {
+        background: var(--brown);
+      }
+      .blue {
+        background: var(--blue);
+      }
+      .border {
+        border: 3px solid var(--border-color);
+      }
+      #square .blue {
+        width: 120px;
+        height: 120px;
+        top: 114px;
+        left: 38px;
+      }
+      #square .brown {
+        width: 80px;
+        height: 80px;
+        top: 282px;
+        left: 132px;
+      }
+      #square .grey {
+        width: 70px;
+        height: 35px;
+        top: 156px;
+        left: 221px;
+      }
+      #square .border {
+        width: 142px;
+        height: 142px;
+        top: 174px;
+        left: 98px;
+      }
+      #circ .blue {
+        width: 124px;
+        height: 124px;
+        left: 110px;
+        top: 90px;
+        border-radius: 62px;
+      }
+      #circ .brown {
+        width: 80px;
+        height: 80px;
+        left: 132px;
+        top: 258px;
+        border-radius: 40px;
+      }
+      #circ .border {
+        width: 142px;
+        height: 142px;
+        left: 98px;
+        top: 158px;
+        border-radius: 71px;
+      }
+      #circ .grey {
+        width: 80px;
+        height: 40px;
+        left: 132px;
+        top: 348px;
+        border-radius: 40px 40px 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="area">
+      <div class="card" id="circ">
+        <div class="grey"></div>
+        <div class="brown"></div>
+        <div class="blue"></div>
+        <div class="border"></div>
+      </div>
+      <div class="card" id="square">
+        <div class="grey"></div>
+        <div class="brown"></div>
+        <div class="blue"></div>
+        <div class="border"></div>
+      </div>
+      <div class="card">
+          <svg viewbox="0 0 344 496" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="167,100 113,193.53 221,193.53" fill="var(--blue)"></polygon>
+              <polygon points="167,172 96,295 238,295" fill="none" stroke="var(--border-color)"></polygon>
+              <polygon points="167,258 127,327.28 207,327.28" fill="var(--brown)"></polygon>
+              <polygon points="148.16,358 195.84,358 212,386 132,386" fill="var(--grey)"></polygon>
+          </svg>
+      </div>
+  </body>
+</html>

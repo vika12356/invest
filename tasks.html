@@ -52,6 +52,7 @@
         transform: translateY(-4px);
       }
     </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
   </head>
   <body>
     <script>
@@ -131,44 +132,45 @@
       <h2 class="section-header">Дневник</h2>
 
       <div id="Diary"></div>
-      <div>
-        <label for="fio">Фамилия,имя,отчество</label>
+      <form action="post" class="row">
+      <div class="col-md-6">
+        <label class ="form-label" for="fio">Фамилия,имя,отчество</label>
         <input type="text" id="fio" value="Колупаева Виктория Максимовна" />
       </div>
-      <div>
-        <form>
-          <p><b>Какой у вас пол?</b></p>
-          <p><input name="dzen" type="radio" value="women" />Женский</p>
-          <p><input name="dzen" type="radio" value="men" /> Мужской</p>
-          <p><input type="submit" value="Выбрать" /></p>
-        </form>
+      <div class="col-md-6">
+        <label class="form-label d-block" for="gender">Пол</label>
+       <div class="btn-group" role="group">
+         <input type="radio" value="m" class="btn-check " id="genderM" name="gender" checked>
+         <label for="genderM" class="btn btn-outline-primary">Мужской</label>
+         <label for="genderF" class="btn btn-outline-primary">Женский</label>
       </div>
-      <div>
-        <label for="school">Номер школы</label>
+      </div>
+      <div class="col-md-6">
+        <label class ="form-label" for="school">Номер школы</label>
         <input type="school" id="school" value="МБОУ СОШ 78" />
       </div>
-      <div>
-        <label for="settlement">Населенный пунк</label>
+      <div class="col-md-6">
+        <label class ="form-label" for="settlement">Населенный пунк</label>
         <input type="settlement" id="settlement" value="Ижевск" />
       </div>
-      <div>
-        <label for="Class">Какой класс</label>
+      <div class="col-md-6">
+        <label class ="form-label" for="Class">Какой класс</label>
         <input type="Class" id="Class" value="11" />
       </div>
-      <div>
-        <label for="color">Цвет обложки</label>
+      <div class="col-md-6">
+        <label class ="form-label" for="color">Цвет обложки</label>
         <input type="color" id="color" value="#cac7a1" />
       </div>
-      <div>
-        <label for="year">Год начала обучения</label>
+      <div class="col-md-6">
+        <label class ="form-label" for="year">Год начала обучения</label>
         <input type="year" id="year" value="2012" />
       </div>
-      <div>
-        <label for="email">Почта</label>
+      <div class="col-md-6">
+        <label class ="form-label" for="email">Почта</label>
         <input type="email" id="email" value="vika@gmail.com" />
       </div>
-      <div>
-        <label for="telephone">Телефон</label>
+      <div class="col-md-6">
+        <label class ="form-label" for="telephone">Телефон</label>
         <input type="telephone" id="telephone" value="123456789" />
       </div>
     </section>
